@@ -1,21 +1,41 @@
 
 export const setColor = function(type){
-    let colors = {
-        mainColor: '#c291f8',
-        subColor: '#f7ecf6',
-        subColor02: '#b989b5',
-    }
-    if(type === "aboutme") {
+    /*
+        Nothing
+        bgColor: white
+        pointColor: #333
+        pointColor02: #333
+
+        type01
+        bgColor: #c291f8
+        pointColor: #f7ecf6
+        pointColor02: #b989b5
+
+        type02
+        bgColor: #2828cb
+        pointColor: #fff3d8
+        pointColor02: #cbbfa5
+
+    */
+
+    let colors = null;
+    if(type === "about") {
         colors = {
-            mainColor: '#c291f8',
-            subColor: '#f7ecf6',
-            subColor02: '#b989b5',
+            bgColor: '#c291f8',
+            pointColor: '#f7ecf6',
+            pointColor02: '#b989b5',
+        }
+    } else if(type === "history") {
+        colors = {
+            bgColor: '#2828cb',
+            pointColor: '#fff3d8',
+            pointColor02: '#cbbfa5',
         }
     } else {
         colors = {
-            mainColor: '#2828cb',
-            subColor: '#fff3d8',
-            subColor02: '#cbbfa5',
+            bgColor: '#fff',
+            pointColor: '#333',
+            pointColor02: 'red',
         }
     }
 

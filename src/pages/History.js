@@ -1,11 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import {css} from '@emotion/react';
 
+// component
+import Layout from '../components/common/Layout'
+
 function History() {
     return (
-        <div>
-            History
-        </div>
+        <Layout>
+            <div>
+                History
+            </div>
+        </Layout>
     )
 }
 
