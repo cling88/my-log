@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 15px;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'NanumBarunGothic'; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,7 +47,7 @@ table {
 
 
 /* custom */
-body { font-family: 'NanumBarunGothic';  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: auto;}
+body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: auto;}
 * { letter-spacing: -0.03rem; font-family: inherit; font-size: inherit; color: inherit; box-sizing: border-box;}
 button { cursor: pointer }
 li { list-style-type: none; } 

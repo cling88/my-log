@@ -1,4 +1,7 @@
 
+import { useEffect } from 'react'
+
+
 // router
 import {
   Route,
@@ -14,6 +17,7 @@ import NotFound from './pages/NotFound'
 import './assets/style/style.css'
 
 function App() {
+
   return (
     <div className="warp">
       <Switch>

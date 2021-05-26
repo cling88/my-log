@@ -6,14 +6,15 @@ const MainStyle = type => css`
     position: relative; 
     width: 100%; 
     height: 100%; 
+    background: ${setColor(type).bgColor};
     .textBox {
         position: absolute; 
         top: 50%; 
         left: 50%; 
         transform: translate(-50%, -50%);
-        font-size: 90px;
+        font-size: 120px;
         font-weight: bold; 
-        width: 483px;
+        width: 650px;
         height: 106px;
         opacity: 0;
         .text {
@@ -48,11 +49,12 @@ const MainStyle = type => css`
                 .navItem {
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     position: relative; 
                     z-index: 3; 
-                    font-size: 18px;
+                    font-size: 30px;
                     margin: 0 50px;
-                    width: 120px; 
+                    width: 180px; 
                     height: 120px;
                     letter-spacing: -0.06rem;
                 }
@@ -61,44 +63,48 @@ const MainStyle = type => css`
     }
     transition: .3s ease-in;
     .activeRound {
+        position: absolute;
+        top: -61px;
         transition: .3s ease-in;
+        width: 220px;
+        height: 220px;
+        border-radius: 100%; 
+        opacity: 0;
+        background: ${setColor(type).pointColor}; 
     }
-    &.aboutme {
-        background: ${setColor('aboutme').subColor};
+    &.about {
         .activeRound {
-            position: absolute;
-            top: -8px; 
-            left: 52px; 
-            width: 120px; 
-            height: 120px; 
-            border-radius: 100%; 
-            background: ${setColor('aboutme').mainColor}; 
+            left: 74px; 
+            opacity: 1;
         }
-        .navItem:nth-child(1) {
+        .navItem:nth-of-type(1) {
             color: #fff;
         }
-        .navItem:nth-child(2) {
-            color: ${setColor('aboutme').subColor02}; 
+        .navItem:nth-of-type(2) {
+            color: ${setColor(type).pointColor02}; 
         }
     }
     &.history {
-        background: ${setColor('history').subColor};
         .activeRound {
-            position: absolute;
-            top: -8px; 
-            left: 282px; 
-            width: 120px; 
-            height: 120px; 
-            border-radius: 100%; 
-            background: ${setColor('history').mainColor}; 
+            left: 354px; 
+            opacity: 1;
         }
-        .navItem:nth-child(1) {
-            color: ${setColor('history').subColor02};
+        .navItem:nth-of-type(1) {
+            color: ${setColor(type).pointColor02};
         }
-        .navItem:nth-child(2) {
+        .navItem:nth-of-type(2) {
             color: #fff;
         }
     }
+    .footer {
+        position: absolute; 
+        left: 50%; 
+        bottom: 100px; 
+        text-align: center;
+        transform: translateX(-50%);
+        color: ${setColor(type).pointColor02};
+    }
 `
+
 
 export default MainStyle
