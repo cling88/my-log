@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 15px;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'NanumBarunGothic'; 
+	font-family: 'Godo M';
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,7 +48,7 @@ table {
 
 /* custom */
 body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: auto;}
-* { letter-spacing: -0.03rem; font-family: inherit; font-size: inherit; color: inherit; box-sizing: border-box;}
+* { letter-spacing: -0.03rem; font-size: inherit; color: inherit; box-sizing: border-box;}
 button { cursor: pointer }
 li { list-style-type: none; } 
 table { border-collapse: collapse; }

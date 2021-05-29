@@ -1,5 +1,5 @@
 import {css} from '@emotion/react';
-import {setColor} from '../assets/style/common'
+import {setColor} from '../styles/commonStyle'
 
 
 const MainStyle = type => css`

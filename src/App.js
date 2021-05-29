@@ -38,7 +38,7 @@ what my site using
 = @emotion/react
 = react-scroll-horizontal
 = tweenmax (gsap)
-
+= fontAwsome 
 
 */
 

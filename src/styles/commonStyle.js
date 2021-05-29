@@ -6,12 +6,14 @@ export const setColor = function(type){
             bgColor: '#f7ecf6',
             pointColor: '#c291f8',
             pointColor02: '#b989b5',
+            pointColor03: '#7a4cd6',
         }
     } else if(type === "history") {
         colors = {
             bgColor: '#fff3d8',
             pointColor: '#2828cb',
             pointColor02: '#cbbfa5',
+            pointColor03: 'red',
         }
     } else {
         colors = {

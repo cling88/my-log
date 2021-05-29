@@ -1,7 +1,22 @@
 
+@import url('./font.css');
 @import url('./resets.css');
 
+* {
+    font-family: 'Godo M';
+}
 body, html, #root, .warp {
     width: 100%; 
     height: 100%; 
 }
+
+.wrap {
+    overflow: hidden;
+}
+
+
+/* scroll */
+.scroll::-webkit-scrollbar {width: 6px;}
+.scroll::-webkit-scrollbar-track {background: transparent; }
+.scroll::-webkit-scrollbar-thumb {background: #3c3c3c; border-radius: 45px;}
+.scroll::-webkit-scrollbar-thumb:hover {background: #3c3c3c;}

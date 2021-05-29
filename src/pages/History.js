@@ -2,7 +2,7 @@
 import {css} from '@emotion/react';
 
 // component
-import Layout from '../components/common/Layout'
+import Layout from '../components//Layout'
 
 function History() {
     return (
