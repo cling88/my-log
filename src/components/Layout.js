@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import {css} from '@emotion/react';
-import { useEffect } from 'react'
 import { useLocation  } from 'react-router-dom'
 
 // style
@@ -10,12 +9,7 @@ import Nav from './Nav'
 
 const Layout = ({ children }) => {
 
-    
     const location = useLocation();
-
-    useEffect(() => {
-        console.log(location.pathname)
-    }, [])
 
     return (
         <div className="wrap" css={LayoutStyle(location.pathname.replace('/', ''))}>

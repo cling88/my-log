@@ -1,20 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import {css} from '@emotion/react';
-import { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { navList } from '../config/navList'
 import { setColor } from '../styles/commonStyle'
 
 
 const Nav = ({type}) => {
-
-    useEffect(() => {
-        
-        console.log(type)
-        if(type) console.log(setColor(type))
-    }, [])
-
     return (
         <div className="navWrap" css={NavStyle(type)}>
             <ul className="navList">
