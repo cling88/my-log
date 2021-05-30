@@ -39,7 +39,7 @@ what my site using
 = react-scroll-horizontal
 = tweenmax (gsap)
 = fontAwsome 
-
+= redux / redux-actions
 */
 
 export default App;
