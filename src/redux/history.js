@@ -7,6 +7,7 @@ export const initPage = createAction(INIT_PAGE);
 const initialState = {
     dateList: [],
     langList: [],
+    keyword: [],
     historyList: [],
 }
 

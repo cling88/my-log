@@ -2,10 +2,13 @@
 import {css} from '@emotion/react';
 import { useEffect } from 'react'
 
+// redux
+import { useDispatch, useSelector } from 'react-redux'
+import { setTheme } from '../redux/theme'
+
 // component
 import Layout from '../components//Layout'
 import Search from '../container/Search'
-
 
 const test = [
     { title: 'apple' },
@@ -17,6 +20,8 @@ const test = [
 
 const History = () => {
 
+    const dispatch = useDispatch();
+
     const handleTest = () => {
         let keyword = 'apple'; 
         let newList = test.filter(t => t.title === keyword);
@@ -25,6 +30,7 @@ const History = () => {
     }
 
     useEffect(() => {
+        dispatch(setTheme('history'))
         handleTest()
     }, [])
 

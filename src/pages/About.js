@@ -2,6 +2,10 @@
 import { useEffect } from 'react'
 import { gsap } from 'gsap'
 
+// redux
+import { useDispatch, useSelector } from 'react-redux'
+import { setTheme } from '../redux/theme'
+
 // style
 import AboutStyle from '../styles/AboutStyle'
 
@@ -14,15 +18,15 @@ import { aboutmeData } from '../config/aboutMeData'
 import { useRef } from 'react/cjs/react.development';
 
 function About() {
-
+    const dispatch = useDispatch();
     const aboutmeListRef = useRef(null);
-    console.log(aboutmeData);
     
     const handleInit = () => {
         gsap.to(aboutmeListRef.current, 1, {top: "0", opacity: 1, ease: 'ease-out', delay: 0})
     }
 
     useEffect(() => {
+        dispatch(setTheme('about'))
         handleInit();
     }, [])
 

@@ -1,6 +1,9 @@
 /** @jsxImportSource @emotion/react */
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect,  } from 'react'
 
+// redux
+import { useDispatch, useSelector } from 'react-redux'
+import { setTheme } from '../redux/theme'
 // style
 import MainStyle from '../styles/MainStyle'
 // lib
@@ -8,6 +11,10 @@ import { gsap } from 'gsap'
 import { Link } from 'react-router-dom';
 
 function Main() {
+    const dispatch = useDispatch();
+    const { themeType } = useSelector(({theme}) => ({
+        themeType: theme.themeType
+    }))
 
     const textBoxRef = useRef(null);
     const topWordRef = useRef(null);
@@ -23,16 +30,17 @@ function Main() {
         gsap.to(navRef.current, 2, {display:'block', opacity: 1, ease: 'ease-in', delay: 2.5})
     }
 
-    const [MainConcept, setMainConcept] = useState(null);
     const handleMouseOver = type => {
-        setMainConcept(type);
+        dispatch(setTheme(type))
     }
+
     useEffect(() => {
+        dispatch(setTheme(null))
         handleInit();
     }, [])
  
     return (
-        <div css={() => MainStyle(MainConcept)} className={MainConcept ? MainConcept : ''}>
+        <div css={() => MainStyle(themeType)} className={themeType ? themeType : ''}>
             <div className="textBox" ref={textBoxRef}>
                 <p className="text topWord" ref={topWordRef}><span>FRONTEND</span></p>
                 <p className="text bottomWord" ref={bottomWordRef}><span>FRONTEND</span></p>
