@@ -32,7 +32,7 @@ function About() {
                 <ul className="aboutmeList" ref={aboutmeListRef}>
                 {
                     aboutmeData.map((data, index) => (
-                        <li className="textBoxItem">
+                        <li className="textBoxItem" key={"textBoxItem_" + index}>
                             <TextBox
                                 key={'textBox_' + index}
                                 title={data.title}
