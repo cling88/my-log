@@ -21,17 +21,17 @@ const test = [
 const History = () => {
 
     const dispatch = useDispatch();
-
-    const handleTest = () => {
-        let keyword = 'apple'; 
-        let newList = test.filter(t => t.title === keyword);
-        console.log(newList)
-        return newList
-    }
+    
+    // const handleTest = () => {
+    //     let keyword = 'apple'; 
+    //     let newList = test.filter(t => t.title === keyword);
+    //     console.log(newList)
+    //     return newList
+    // }
 
     useEffect(() => {
         dispatch(setTheme('history'))
-        handleTest()
+        // handleTest()
     }, [])
 
 
