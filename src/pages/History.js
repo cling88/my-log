@@ -2,6 +2,7 @@
 import {css} from '@emotion/react';
 import { useEffect } from 'react'
 
+
 // redux
 import { useDispatch, useSelector } from 'react-redux'
 import { setTheme } from '../redux/theme'
@@ -9,19 +10,21 @@ import { setTheme } from '../redux/theme'
 // component
 import Layout from '../components//Layout'
 import Search from '../container/Search'
+import HistoryStyle from '../styles/HistoryStyle';
+import HistoryContainer from '../container/HistoryContainer';
 
-const test = [
-    { title: 'apple' },
-    { title: 'apple banana' },
-    { title: 'orange' },
-    { title: 'avocado' },
-    { title: 'tuna' },
-]
+// const test = [
+//     { title: 'apple' },
+//     { title: 'apple banana' },
+//     { title: 'orange' },
+//     { title: 'avocado' },
+//     { title: 'tuna' },
+// ]
 
 const History = () => {
 
     const dispatch = useDispatch();
-    
+
     // const handleTest = () => {
     //     let keyword = 'apple'; 
     //     let newList = test.filter(t => t.title === keyword);
@@ -38,10 +41,10 @@ const History = () => {
 
     return (
         <Layout>
-            <div className="historyWrap">
+            <div className="historyWrap" css={HistoryStyle}>
                 <Search/>
                 <div className="historyContent">
-                historyContent
+                    <HistoryContainer/>
                 </div>
             </div>
         </Layout>

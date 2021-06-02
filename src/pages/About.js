@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
 // redux
@@ -15,7 +15,6 @@ import TextBox from '../components/TextBox'
 
 // data
 import { aboutmeData } from '../config/aboutMeData'
-import { useRef } from 'react/cjs/react.development';
 
 function About() {
     const dispatch = useDispatch();

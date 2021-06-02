@@ -15,21 +15,109 @@ export const langList = [
     {id: 'langList_3', value: 'react'},
 ]
 
-
-export const historyData = [
-    {
-        id: '2017_prj1',
-        title: 'title',
-        content: () => (
-            <div>
-                <p>프론트엔드 </p>
-                <p>프론트엔드 </p>
-                <p>프론트엔드 </p>
-                <p>프론트엔드 </p>
-                <p>프론트엔드 </p>
-                <p>프론트엔드 </p>
-            </div>
-        )
-    },
-]
+export const historyData = {
+    2021: [
+        {
+            id: '2019_prj1',
+            title: '천재교육 쇼핑몰12',
+            url: 'https://mall.chunjae.co.kr/#/main/main',
+            type: [
+                'pc',
+                'mobile'
+            ],
+            skills: [
+                'es6', 'css', 'gulp', 'svn'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                </div>
+            ),
+        },
+        {
+            id: '2019_prj2',
+            title: '천재교육 쇼핑몰13',
+            url: 'https://mall.chunjae.co.kr/#/main/main',
+            type: [
+                'pc',
+            ],
+            skills: [
+                'html', 'css', 'gulp', 'svn'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                </div>
+            ),
+        },
+    ],
+    2020: [
+        {
+            id: '2019_prj3',
+            title: '천재교육 쇼핑몰222222',
+            url: 'https://mall.chunjae.co.kr/#/main/main',
+            type: [
+                'pc',
+            ],
+            skills: [
+                'html', 'css', 'gulp', 'svn'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                </div>
+            ),
+        },
+        {
+            id: '2019_prj4',
+            title: '천재교육 333333',
+            url: 'https://mall.chunjae.co.kr/#/main/main',
+            type: [
+                'pc',
+            ],
+            skills: [
+                'html', 'css', 'gulp', 'svn'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                </div>
+            ),
+        },
+    ],
+    2019: [
+        {
+            id: '2019_prj5',
+            title: '천재교육 쇼핑몰222222',
+            url: 'https://mall.chunjae.co.kr/#/main/main',
+            type: [
+                'mobile'
+            ],
+            skills: [
+                'es6', 'css', 'gulp', 'svn'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                </div>
+            ),
+        },
+        {
+            id: '2019_prj6',
+            title: '천재교육 333333',
+            url: 'https://mall.chunjae.co.kr/#/main/main',
+            type: [
+                '반응형'
+            ],
+            skills: [
+                'html', 'css', 'gulp', 'svn'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                </div>
+            ),
+        },
+    ]
+}
 
