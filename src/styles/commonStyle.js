@@ -13,7 +13,7 @@ export const setColor = function(type){
             bgColor: '#fff3d8',
             pointColor: '#2828cb',
             pointColor02: '#cbbfa5',
-            pointColor03: 'red',
+            pointColor03: '#62ffbe',
         }
     } else {
         colors = {

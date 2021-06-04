@@ -20,3 +20,5 @@ body, html, #root, .warp {
 .scroll::-webkit-scrollbar-track {background: transparent; }
 .scroll::-webkit-scrollbar-thumb {background: #3c3c3c; border-radius: 45px;}
 .scroll::-webkit-scrollbar-thumb:hover {background: #3c3c3c;}
+
+.border { opacity: .4; }

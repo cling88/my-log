@@ -1,4 +1,5 @@
 
+import Definition from '../components/Definition'
 
 export const dateList = [
     {id: 'dateList_0', value: 'all'},
@@ -16,172 +17,61 @@ export const langList = [
 ]
 
 export const historyData = {
-    2021: [
+    2015: [
         {
-            id: '1',
-            title: '천재교육 쇼핑몰12',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
+            id: '2015_1',
+            terminate: '2015 ~ 2018',
+            title: 'FRISM',
+            url: null,
             type: [
                 'pc',
                 'mobile'
             ],
             skills: [
-                'es6', 'css', 'gulp', 'svn'
+                'html', 'css', 'jquery'
             ],
             content: () => (
                 <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                    <p>쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
                 </div>
             ),
+            detail: () => (
+                <div>
+                    <ul>
+                        <li><Definition dt="관여율: " dd="퍼블리싱 100%" /></li>
+                        <li><Definition dt="관리자 사이트: " dd="PC" /></li>
+                        <li><Definition dt="사용자 사이트: " dd="webapp, 반응형" /></li>
+                    </ul>
+                    <hr className="border" />
+                    <p>사내 자체 서비스로 3년간 지속적으로 기능 확장을 함에 따라 퍼블리싱을 진행하였습니다.</p>
+                    <p>아쉽게도 지금은 서비스가 종료되었습니다.</p>
+                </div>
+            )
         },
         {
-            id: '2',
-            title: '천재교육 쇼핑몰13',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
+            id: '2015_2',
+            terminate: '2015.07 ~ 2015.09',
+            title: '서울시체육회 블로그',
+            url: null,
             type: [
                 'pc',
+                'mobile'
             ],
             skills: [
-                'html', 'css', 'gulp', 'svn'
+                'html', 'css', 'jquery'
             ],
             content: () => (
                 <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
+                    <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
                 </div>
             ),
+            detail: () => (
+                <div>
+                    <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
+                    <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
+                </div>
+            )
         },
     ],
-    2020: [
-        {
-            id: '3',
-            title: '천재교육 쇼핑몰222222',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                'pc',
-            ],
-            skills: [
-                'html', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-        {
-            id: '4',
-            title: '천재교육 333333',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                'pc',
-            ],
-            skills: [
-                'html', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-    ],
-    2019: [
-        {
-            id: '11',
-            title: '천재교육 쇼핑몰222222',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                'mobile'
-            ],
-            skills: [
-                'es6', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-        {
-            id: '22',
-            title: '천재교육 333333',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                '반응형'
-            ],
-            skills: [
-                'html', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-        {
-            id: '33',
-            title: '천재교육 쇼핑몰222222',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                'mobile'
-            ],
-            skills: [
-                'es6', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-        {
-            id: '44',
-            title: '천재교육 333333',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                '반응형'
-            ],
-            skills: [
-                'html', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-        {
-            id: '55',
-            title: '천재교육 쇼핑몰222222',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                'mobile'
-            ],
-            skills: [
-                'es6', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-        {
-            id: '66',
-            title: '천재교육 333333',
-            url: 'https://mall.chunjae.co.kr/#/main/main',
-            type: [
-                '반응형'
-            ],
-            skills: [
-                'html', 'css', 'gulp', 'svn'
-            ],
-            content: () => (
-                <div className="content">
-                    <p>천재교육 사이트 중 쇼핑목을 맡아 공통 컴포넌트 작업과 이후 페이지 및 스크립트 작업을 하였습니다.</p>
-                </div>
-            ),
-        },
-    ]
 }
 
