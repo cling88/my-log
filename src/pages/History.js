@@ -42,7 +42,10 @@ const History = () => {
     return (
         <Layout>
             <div className="historyWrap" css={HistoryStyle}>
-                <Search/>
+                {/* <Search/> */}
+                <br />
+                <br />
+                <br />
                 <div className="historyContent">
                     <HistoryContainer/>
                 </div>

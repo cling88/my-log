@@ -45,13 +45,19 @@ export const HistoryContainerStyle = css`
                 z-index: 1; 
                 background: black;
             }
-            
             .date {
                 line-height: 1.3;
                 vertical-align: top;
                 margin-left: 6px;
                 font-size: 12px;
             }
+        }
+        .historyList {
+        }
+
+        // lib custom
+        .menu-item-wrapper {
+            margin-right: 10px;
         }
     }
 `

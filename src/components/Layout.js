@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 const LayoutStyle = type => css`
     position: relative;
     width: 100%;
-    min-width: 1200px; 
+    min-width: 1290px; 
     height: 100%; 
     padding-left: 160px;
     background: ${setColor(type).bgColor};

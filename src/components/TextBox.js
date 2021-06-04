@@ -25,9 +25,10 @@ const TextBoxStyle = css`
         border-bottom: 0 none;
     }
     .textBoxTitle {
-        width: 28%;
-        padding: 50px 50px 0 50px;
-        text-align: center;
+        width: 24%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 25px;
         letter-spacing: -0.04em;
         color: ${setColor('about').pointColor02};
