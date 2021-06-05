@@ -1,7 +1,7 @@
 import {css} from '@emotion/react';
+import { setColor } from './commonStyle';
 
 const HistoryStyle = css`
-    border: 1px solid red;
 `
 
 export const HistoryContainerStyle = css`
@@ -26,11 +26,12 @@ export const HistoryContainerStyle = css`
             z-index: 1; 
             width: 100px;
             height: 100%;
+            color: ${setColor('history').pointColor};
             &:before {
                 content: '';
                 width: 15px; 
                 height: 15px; 
-                background: black; 
+                background: ${setColor('history').pointColor}; 
                 display: inline-block; 
                 border-radius: 100%; 
             }
@@ -43,13 +44,14 @@ export const HistoryContainerStyle = css`
                 top: 0; 
                 left: 7px;
                 z-index: 1; 
-                background: black;
+                background: ${setColor('history').pointColor};
             }
             .date {
-                line-height: 1.3;
+                line-height: 1.1;
                 vertical-align: top;
                 margin-left: 6px;
-                font-size: 12px;
+                font-size: 14px;
+                letter-spacing: -0.08em;
             }
         }
         .historyList {

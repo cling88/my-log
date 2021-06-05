@@ -28,7 +28,7 @@ const LayoutStyle = type => css`
     width: 100%;
     min-width: 1290px; 
     height: 100%; 
-    padding-left: 160px;
+    padding-left: 240px;
     background: ${setColor(type).bgColor};
     border: 8px solid ${setColor(type).pointColor};
     border-left: 0;

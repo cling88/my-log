@@ -46,8 +46,12 @@ const HistoryContainer = () => {
         newList = dateList.filter((item, index, self) => {
             return self.indexOf(item) === index;
         })
-        setDateList(newList);
-        handleSetData(newList);
+
+        // order by
+        let newList2 = [...newList].sort((a, b) => a.date - b.date).reverse();
+
+        setDateList(newList2);
+        handleSetData(newList2);
     }
 
     useEffect(() => {

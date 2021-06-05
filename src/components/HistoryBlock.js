@@ -40,6 +40,7 @@ const HistoryBlock = ({ data, mouseOverHandle }) => {
             css={HistoryBlockStyle(themeType)}
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
+            onClick={() => setActive(!Active)}
         >
             <div className="historySection">
                 <div className="header">
@@ -61,7 +62,7 @@ const HistoryBlock = ({ data, mouseOverHandle }) => {
                         }
                     </div>
                 </div>
-                <button className="btnMore" onClick={() => setActive(!Active)}>MORE</button>
+                <button className="btnMore">MORE</button>
             </div>
             <div className={Active ? 'historyMore active': 'historyMore'}>
                 <div className="historyMoreInner">
@@ -85,7 +86,8 @@ const HistoryBlock = ({ data, mouseOverHandle }) => {
 
 const HistoryBlockStyle = themeType => css`
     // width: 600px;
-    height: 180px;
+    cursor: pointer;
+    height: 200px;
     margin-right: 15px;
     padding: 15px;
     background: #fff;
@@ -153,6 +155,7 @@ const HistoryBlockStyle = themeType => css`
         }
         .moreEtc {
             font-size: 14px;
+            
         }
         .historyMoreInner {
             width: 280px;
@@ -168,6 +171,11 @@ const HistoryBlockStyle = themeType => css`
             padding: 0 15px; 
             .moreContent {
                 word-break: keep-all;
+                .workList {
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 10px; 
+                    margin-bottom: 10px;
+                }
             }
             a {
                 text-decoration: underline; 

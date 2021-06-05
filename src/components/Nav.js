@@ -26,41 +26,48 @@ const NavStyle = type => css`
     position: absolute; 
     top: 0; 
     left: 0; 
-    width: 160px; 
+    width: 240px; 
     height: 100%; 
     display: flex; 
     align-items: center; 
     justify-content: center;
     background: ${setColor(type).pointColor};
     .navList {
+        display: flex; 
+        flex-direction: column;
         text-align: center;
         .navItem {
-            position: relative;
             margin-bottom: 25px;
             color: #fff;
             display: inline-block;
-            &:hover {
-                &:after {
-                    width: 100%;
-                }
-            }
             &.active {
-                &:after {
-                    width: 100%;
+                a {
+                    &:after {
+                        width: 100%;
+                    }
                 }
             }
-            &:after {
-                content: '';
-                display: inline-block; 
-                position: absolute; 
-                bottom: -7px;
-                left: 0;
-                z-index: 1;
-                background: ${setColor(type).pointColor03};
-                width: 0;
-                height: 10px;
-                opacity: 0.5;
-                transition: .2s ease-in;
+            a {
+                position: relative;
+                display: inlie-block; 
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+                &:after {
+                    content: '';
+                    display: inline-block; 
+                    position: absolute; 
+                    bottom: -7px;
+                    left: 0;
+                    z-index: 1;
+                    background: ${setColor(type).pointColor03};
+                    width: 0;
+                    height: 10px;
+                    opacity: 0.5;
+                    transition: .2s ease-in;
+                }
             }
         }
     }

@@ -15,9 +15,7 @@ const TextBox = ({ title, content }) => {
 }
 
 const TextBoxStyle = css`
-    display: flex;
     width: 96%;
-    margin-left: 2%; 
     padding: 50px 0;
     color: #333;
     border-bottom: 1px solid ${setColor('about').pointColor};
@@ -25,15 +23,13 @@ const TextBoxStyle = css`
         border-bottom: 0 none;
     }
     .textBoxTitle {
-        width: 24%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
+        margin-bottom: 20px;
+        font-size: 24px;
         letter-spacing: -0.04em;
         color: ${setColor('about').pointColor02};
     }
     .textBoxCont {
+        font-size: 20px;
         line-height: 1.4;
     }
     

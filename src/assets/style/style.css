@@ -12,7 +12,14 @@ body, html, #root, .warp {
 
 .wrap {
     overflow: hidden;
+    height: 100%;
 }
+
+
+::selection{background:#c291f8;color:#fff;}
+::-moz-selection{background:#c291f8;color:#fff;}
+::-webkit-selection{background:#c291f8;color:#fff;} 
+
 
 
 /* scroll */

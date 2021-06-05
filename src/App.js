@@ -7,6 +7,8 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
+
+import { useSelector } from 'react-redux'
 // pages
 import Main from './pages/Main'
 import About from './pages/About'
@@ -18,8 +20,12 @@ import './assets/style/style.css'
 
 function App() {
 
+  const { themeType } = useSelector(({ theme }) => ({
+    themeType: theme.themeType
+  }))
+
   return (
-    <div className="warp">
+    <div className={`wrap ${themeType && themeType}`}>
       <Switch>
         <Route exact path="/" component={Main} />
         <Route exact path="/about" component={About} />

@@ -92,7 +92,6 @@ const Search = () => {
 const SearchStyle = css`
     padding: 50px; 
     .row {
-        border: 1px solid red;
         margin-bottom: 30px;
         .tag {
         }

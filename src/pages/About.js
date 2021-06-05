@@ -19,9 +19,11 @@ import { aboutmeData } from '../config/aboutMeData'
 function About() {
     const dispatch = useDispatch();
     const aboutmeListRef = useRef(null);
+    const imgWrapRef = useRef(null);
     
     const handleInit = () => {
         gsap.to(aboutmeListRef.current, 1, {top: "0", opacity: 1, ease: 'ease-out', delay: 0})
+        gsap.to(imgWrapRef.current, 1, {opacity: .4, ease: 'ease-out', delay: 0})
     }
 
     useEffect(() => {
@@ -32,6 +34,9 @@ function About() {
     return (
         <Layout>
             <div className="aboutmePageWrap" css={AboutStyle}>
+                <div className="imgWrap" ref={imgWrapRef}>
+                    <img src="./images/intj.png" alt="I am INTJ" />
+                </div>
                 <ul className="aboutmeList" ref={aboutmeListRef}>
                 {
                     aboutmeData.map((data, index) => (

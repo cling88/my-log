@@ -6,6 +6,16 @@ const AboutStyle = css`
         position: relative; 
         top: 100px;
         opacity: 0; 
+        padding-left: 5%;
+    }
+    .imgWrap {
+        position: absolute; 
+        bottom: 30px; 
+        right: 30px; 
+        opacity: 0;
+        img {
+            width: 300px;
+        }
     }
 `
 
