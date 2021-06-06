@@ -54,6 +54,16 @@ const HistoryContainer = () => {
         handleSetData(newList2);
     }
 
+    const handleMouseOver = e => {
+        const wrap = document.querySelector('.containerWrap');
+        wrap.style.overflowY  = 'hidden';
+    }
+
+    const handleMouseLeave = () => {
+        const wrap = document.querySelector('.containerWrap');
+        wrap.style.overflowY  = 'auto';
+    }
+
     useEffect(() => {
         // setDataList(historyData);
         // handleSetOrder();
@@ -70,7 +80,10 @@ const HistoryContainer = () => {
                 DateList.map(date => (
                     <div className="yearBlock" key={date}>
                        <div className="dateBlock"><span className="date">{ date }</span></div>
-                       <div className="historyList">
+                       <div className="historyList"
+                            onMouseOver={handleMouseOver}
+                            onMouseLeave={handleMouseLeave}
+                       >
                             <ScrollMenu 
                                 data={historyData[date].map(data => (
                                     <HistoryBlock key={data.id} data={data} />

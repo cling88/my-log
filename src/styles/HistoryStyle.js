@@ -55,6 +55,7 @@ export const HistoryContainerStyle = css`
             }
         }
         .historyList {
+            
         }
 
         // lib custom

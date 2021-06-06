@@ -12,34 +12,20 @@ import Figment from './Figment'
 
 const HistoryBlock = ({ data, mouseOverHandle }) => {
 
-    const [Active, setActive] = useState(false);
+    const [Active, setActive] = useState(true);
 
     const { themeType } = useSelector(({ theme }) => ({
         themeType: theme.themeType
     }));
-
-    const handleMouseOver = e => {
-        const wrap = document.querySelector('.containerWrap');
-        wrap.style.overflowY  = 'hidden';
-    }
-
-    const handleMouseLeave = () => {
-        const wrap = document.querySelector('.containerWrap');
-        wrap.style.overflowY  = 'auto';
-    }
     
     useEffect(() => {
         console.log("data: ", data)
     }, []);
 
-
-
     return (
         <div 
             className='historyBlock'
             css={HistoryBlockStyle(themeType)}
-            onMouseOver={handleMouseOver}
-            onMouseLeave={handleMouseLeave}
             onClick={() => setActive(!Active)}
         >
             <div className="historySection">
