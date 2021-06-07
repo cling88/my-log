@@ -233,7 +233,7 @@ export const historyData = {
                 'pc',
             ],
             skills: [
-                'ReactJS', 'git'
+                'react', 'git'
             ],
             content: () => (
                 <div className="content">
@@ -290,11 +290,14 @@ export const historyData = {
                 'pc', 'git'
             ],
             skills: [
-                'ReactJS', 'html', 'css'
+                'react', 'html', 'css'
             ],
             content: () => (
                 <div className="content">
-                    <p>현대자동차 ccsp, 통합 로그인 사이트</p>
+                    <p>
+                        현대자동차의 ccsp(Car Connection Service Platform)의 일부 페이지 개발에 참여하였습니다. 
+                        현대자동차 사이트의 통합 로그인의 프로세스를 바꾸는 과정에서 퍼블리싱 리뉴얼 작업에 참여하였습니다. 
+                    </p>
                 </div>
             ),
             detail: () => (
@@ -318,7 +321,7 @@ export const historyData = {
                 'pc',
             ],
             skills: [
-                'ReactJS', 'git'
+                'react', 'git'
             ],
             content: () => (
                 <div className="content">
@@ -360,403 +363,97 @@ export const historyData = {
                         <li><Definition dt="개발: " dd="운영" /></li>
                     </ul>
                     <p>
-                        매달 웹진 내용 및 요청별 일부 수정을 하였습니다.
+                        매월 웹진 내용 업데이트 및 요청별 일부 수정을 하였습니다.
                     </p>
                 </div>
             )
         },
     ],
+    2020: [
+        {
+            id: '2020_1',
+            terminate: '2020.05~2020.07',
+            title: 'SK Tcommerce VCS',
+            url: null,
+            type: [
+                'pc',
+            ],
+            skills: [
+                'javascript', 'git'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>SK Planet의 TV 상품판매 플랫폼 프로토타입</p>
+                </div>
+            ),
+            detail: () => (
+                <div>
+                    <ul className="workList">
+                    <li><Definition dt="관여: " dd="개발 100%" /></li>
+                        <li><Definition dt="개발: " dd="개발" /></li>
+                    </ul>
+                    <p>
+                        spatial Navigation 과 TweenMax 라이브러리를 사용하여 arrow 컨트롤과 애니메이션을 통한 인터렉션등을 구축하였습니다. 
+                    </p>
+                </div>
+            )
+        },
+        {
+            id: '2020_2',
+            terminate: '2020.07~2020.08',
+            title: '홈플러스 쇼핑몰',
+            url: 'https://front.homeplus.co.kr/',
+            type: [
+                'react', 'git'
+            ],
+            skills: [
+                'javascript', 'git'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>홈플러스 쇼핑몰</p>
+                </div>
+            ),
+            detail: () => (
+                <div>
+                    <ul className="workList">
+                    <li><Definition dt="관여: " dd="개발 30%" /></li>
+                        <li><Definition dt="개발: " dd="리뉴얼" /></li>
+                    </ul>
+                    <p>
+                        리액트 기반으로 일부 페이지를 개발에 참여하였습니다. 
+                    </p>
+                </div>
+            )
+        },
+        {
+            id: '2020_3',
+            terminate: '2020.09~2020.10',
+            title: 'KT Game Box',
+            url: 'https://www.ktgamebox.com/#/',
+            type: [
+                'pc'
+            ],
+            skills: [
+                'html', 'css', 'javascript'
+            ],
+            content: () => (
+                <div className="content">
+                    <p>KT GameBox</p>
+                </div>
+            ),
+            detail: () => (
+                <div>
+                    <ul className="workList">
+                    <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
+                        <li><Definition dt="개발: " dd="리뉴얼" /></li>
+                    </ul>
+                    <p>
+                        swiperjs, javascript 를 기반으로 퍼블리싱 및 인터렉션을 하였습니다. 
+                    </p>
+                </div>
+            )
+        },
+    ]
     
 }
-
-
-
-
-// import Definition from '../components/Definition'
-
-// export const dateList = [
-//     {id: 'dateList_0', value: 'all'},
-//     {id: 'dateList_1', value: '2017'},
-//     {id: 'dateList_2', value: '2018'},
-//     {id: 'dateList_3', value: '2019'},
-//     {id: 'dateList_4', value: '2020'},
-//     {id: 'dateList_5', value: '2021'}
-// ]
-
-// export const langList = [
-//     {id: 'langList_1', value: 'html&css'},
-//     {id: 'langList_2', value: 'javascript'},
-//     {id: 'langList_3', value: 'react'},
-// ]
-
-// export const historyData = {
-//     2015: [
-//         {
-//             id: '2015_1',
-//             terminate: '2015 ~ 2018',
-//             title: 'FRISM',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <ul>
-//                         <li><Definition dt="관여율: " dd="퍼블리싱 100%" /></li>
-//                         <li><Definition dt="관리자 사이트: " dd="PC" /></li>
-//                         <li><Definition dt="사용자 사이트: " dd="webapp, 반응형" /></li>
-//                     </ul>
-//                     <hr className="border" />
-//                     <p>사내 자체 서비스로 3년간 지속적으로 기능 확장을 함에 따라 퍼블리싱을 진행하였습니다.</p>
-//                     <p>아쉽게도 지금은 서비스가 종료되었습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '2015_2',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//     ],
-//     2016: [
-//         {
-//             id: '0',
-//             terminate: '2015 ~ 2018',
-//             title: 'FRISM',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <ul>
-//                         <li><Definition dt="관여율: " dd="퍼블리싱 100%" /></li>
-//                         <li><Definition dt="관리자 사이트: " dd="PC" /></li>
-//                         <li><Definition dt="사용자 사이트: " dd="webapp, 반응형" /></li>
-//                     </ul>
-//                     <hr className="border" />
-//                     <p>사내 자체 서비스로 3년간 지속적으로 기능 확장을 함에 따라 퍼블리싱을 진행하였습니다.</p>
-//                     <p>아쉽게도 지금은 서비스가 종료되었습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '1',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '2',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '3',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//     ],
-//     2017: [
-//         {
-//             id: '00',
-//             terminate: '2015 ~ 2018',
-//             title: 'FRISM',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <ul>
-//                         <li><Definition dt="관여율: " dd="퍼블리싱 100%" /></li>
-//                         <li><Definition dt="관리자 사이트: " dd="PC" /></li>
-//                         <li><Definition dt="사용자 사이트: " dd="webapp, 반응형" /></li>
-//                     </ul>
-//                     <hr className="border" />
-//                     <p>사내 자체 서비스로 3년간 지속적으로 기능 확장을 함에 따라 퍼블리싱을 진행하였습니다.</p>
-//                     <p>아쉽게도 지금은 서비스가 종료되었습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '11',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '22',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '33',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//     ],
-//     2018: [
-//         {
-//             id: '001',
-//             terminate: '2015 ~ 2018',
-//             title: 'FRISM',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <ul>
-//                         <li><Definition dt="관여율: " dd="퍼블리싱 100%" /></li>
-//                         <li><Definition dt="관리자 사이트: " dd="PC" /></li>
-//                         <li><Definition dt="사용자 사이트: " dd="webapp, 반응형" /></li>
-//                     </ul>
-//                     <hr className="border" />
-//                     <p>사내 자체 서비스로 3년간 지속적으로 기능 확장을 함에 따라 퍼블리싱을 진행하였습니다.</p>
-//                     <p>아쉽게도 지금은 서비스가 종료되었습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '011',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '022',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//         {
-//             id: '303',
-//             terminate: '2015.07 ~ 2015.09',
-//             title: '서울시체육회 블로그',
-//             url: null,
-//             type: [
-//                 'pc',
-//                 'mobile'
-//             ],
-//             skills: [
-//                 'html', 'css', 'jquery'
-//             ],
-//             content: () => (
-//                 <div className="content">
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                 </div>
-//             ),
-//             detail: () => (
-//                 <div>
-//                     <p>카폐, 음식점 등을 중심으로 쿠폰을 쉽게 적립하고 사용할 수 있는 서비스</p>
-//                     <p>관리자 사이트, 사용자 웹앱 등을 늘어나는 기능에 맞춰 퍼블리싱을 하였습니다.</p>
-//                 </div>
-//             )
-//         },
-//     ],
-// }
-
