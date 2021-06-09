@@ -20,12 +20,24 @@ body, html, #root, .warp {
 ::-moz-selection{background:#c291f8;color:#fff;}
 ::-webkit-selection{background:#c291f8;color:#fff;} 
 
-
+.hide { display: none !important; }
 
 /* scroll */
 .scroll::-webkit-scrollbar {width: 6px;}
 .scroll::-webkit-scrollbar-track {background: transparent; }
 .scroll::-webkit-scrollbar-thumb {background: #3c3c3c; border-radius: 45px;}
 .scroll::-webkit-scrollbar-thumb:hover {background: #3c3c3c;}
+
+
+.scrollLight::-webkit-scrollbar {width: 6px;}
+.scrollLight::-webkit-scrollbar-track {background: transparent; }
+.scrollLight::-webkit-scrollbar-thumb {background: #ffffff70; border-radius: 45px;}
+.scrollLight::-webkit-scrollbar-thumb:hover {background: #ffffff70;}
+
+
+.scrollX::-webkit-scrollbar {height: 6px; }
+.scrollX::-webkit-scrollbar-track {background: transparent; }
+.scrollX::-webkit-scrollbar-thumb {background: #cbbfa5; border-radius: 45px;}
+.scrollX::-webkit-scrollbar-thumb:hover {background: #7b6127;}
 
 .border { opacity: .4; }

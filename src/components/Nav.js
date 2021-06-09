@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import { navList } from '../config/navList'
 import { setColor } from '../styles/commonStyle'
 
-
 const Nav = ({type}) => {
     return (
         <div className="navWrap" css={NavStyle(type)}>
@@ -17,6 +16,9 @@ const Nav = ({type}) => {
                         </li>
                     ))
                 }
+                <li className="navBlog">
+                    <a href="https://wazacs.tistory.com/" rel="noreferrer" target="_blank">BLOG</a>
+                </li>
             </ul>
         </div>
     )
@@ -67,6 +69,25 @@ const NavStyle = type => css`
                     height: 10px;
                     opacity: 0.5;
                     transition: .2s ease-in;
+                }
+            }
+        }
+        .navBlog {
+            a {
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                width: 60px; 
+                height: 60px;
+                background: ${setColor(type).bgColor};
+                color: ${setColor(type).pointColor};
+                border-radius: 100%; 
+                margin: 0 auto;
+                font-size: 16px;
+                font-weight: bold;
+                transition: .2s ease-in; 
+                &:hover {
+                    background: ${setColor(type).pointColor02};
                 }
             }
         }

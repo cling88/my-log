@@ -3,7 +3,6 @@ import {css} from '@emotion/react';
 import { setColor } from '../styles/commonStyle'
 
 const TextBox = ({ title, content }) => {
-
     return (
         <div className="textBoxWrap" css={TextBoxStyle}>
             <div className="textBoxTitle">{ title }</div>

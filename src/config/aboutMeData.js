@@ -1,20 +1,26 @@
 export const aboutmeData = [
     {
-        title: 'WHO AM I',
+        title: 'WHO AM I 💜',
         content: () => (
             <div>
-                <p>html, css, 플로그인 활용 위주의 퍼블리싱 개발을 합니다. </p>
                 <p>
-                    최근 2년동안에는 javascript(특히 React)  위주의 프론트엔드에 빠져 2년 정도는 중간 중간 가능한 프로젝트들에 참여하였습니다. 
-                    React 위주의 퍼블을 주로 시작하고 최근에는 redux-action을 활용하여 redux 를 통한 상태관리도 차근차근 적용하고 있습니다.
+                    PC, Mobile, TV, Tablet 등 다양한 웹 플랫폼 환경에 맞추어 퍼블리싱을 오랫동안 해왔습니다.                    
+                </p>
+                <p>
+                    최근에는 Javascript(특히 React) 언어에 매력을 느끼고 프론트엔드 위주의 프로젝트들에 참여하기 시작하였습니다.
+                    주로 React 기반의 개발을 하였고 최근에는 redux-action을 활용하여 redux를 통한 상태관리도 차근차근 적용하고 있습니다.
                 </p>
                 <br />
-                <p>기존 업무방식은 기획자가 표현하려는 UI,UX와 백엔드에서 개발하기 적합한 방식, 그리고 프론트엔드에서 개발하기 적합한 API응답값을 의논하여 개발하였습니다.</p>
+                <p>
+                    개발을 할 때에는 기획자가 표현하려는 UI,UX와 백엔드에서 개발하기 편한 방식, 그리고 프론트엔드에서 개발하기 적합한 방법을 의논하여 진행합니다. <br />
+                    그만큼 서로간의 커뮤니케이션과 정보공유를 중요핟고 생각합니다. <br />
+                    최대한 상대방의 의견을 따르려고 하고, 아이디어가 떠오르거나 좋은 의견이 생각나면 나누려고 노력합니다. 
+                </p>
             </div>
         )
     },
     {
-        title: 'WHAT I LIKE',
+        title: 'WHAT I LIKE 💜',
         content: () => (
             <div>
                 <p>해야 하는 업무의 전체적인 흐름과 목적(사용성)을 파악하고 개발하는 것을 지향하며, 개발과 서비스에 대한 고민하는 것을 좋아합니다. </p>
@@ -24,7 +30,7 @@ export const aboutmeData = [
         )
     },
     {
-        title: 'WHAT I WANT',
+        title: 'WHAT I WANT 💜',
         content: () => (
             <div>
                 <p>

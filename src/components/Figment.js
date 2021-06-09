@@ -14,7 +14,7 @@ const FigmentStyle = type => css`
     display: inline-block; 
     min-width: 55px;
     text-align: center; 
-    padding: 3px 0;
+    padding: 3px 11px;
     border-radius: 45px;
     font-size: 13px;
 `

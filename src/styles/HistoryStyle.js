@@ -47,17 +47,20 @@ export const HistoryContainerStyle = css`
                 background: ${setColor('history').pointColor};
             }
             .date {
-                line-height: 1.1;
+                line-height: 0.7;
                 vertical-align: top;
                 margin-left: 6px;
-                font-size: 14px;
+                font-size: 20px;
                 letter-spacing: -0.08em;
             }
         }
         .historyList {
-            
+            position: relative;
+            overflow: hidden;
+            width: 100%; 
+            height: 240px;
+            overflow-x: auto;
         }
-
         // lib custom
         .menu-item-wrapper {
             margin-right: 10px;

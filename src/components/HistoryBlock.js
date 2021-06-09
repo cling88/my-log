@@ -1,19 +1,17 @@
-/* eslint-disable react/jsx-no-target-blank */
 /** @jsxImportSource @emotion/react */
 import {css} from '@emotion/react';
-import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
 
+import { useState } from 'react'
+import { useSelector } from 'react-redux'
 // config 
 import { setColor } from '../styles/commonStyle'
 import Definition from './Definition';
 // component
 import Figment from './Figment'
 
-const HistoryBlock = ({ data, mouseOverHandle }) => {
+const HistoryBlock = ({ data }) => {
 
     const [Active, setActive] = useState(false);
-
     const { themeType } = useSelector(({ theme }) => ({
         themeType: theme.themeType
     }));
@@ -40,13 +38,17 @@ const HistoryBlock = ({ data, mouseOverHandle }) => {
                     </div>
                     <div className="infoSkills">
                         {
-                            data.skills && data.skills.map((s, i) => <Figment key={'figType2_' + i} type="skills" text={s} />)
+                            data.skills && 
+                            data.skills.map((s, i) => (
+                                <Figment key={'figType2_' + i} type="skills" text={s} />
+                            ))
                         }
                     </div>
                 </div>
                 <button className="btnMore">MORE</button>
             </div>
-            <div className={Active ? 'historyMore active': 'historyMore'}>
+            <div className={Active ? 'historyMore active': 'historyMore '}>
+                <div className="historyMoreLayer"></div>
                 <div className="historyMoreInner">
                     <div className="moreContent">
                         { data.detail() }
@@ -56,7 +58,7 @@ const HistoryBlock = ({ data, mouseOverHandle }) => {
                             data.url &&
                             <Definition
                                 dt={"URL: "}
-                                dd={(<a href={data.url} target="_blank">{data.title} 바로가기</a>)}
+                                dd={(<a href={data.url} rel="noreferrer" target="_blank">{data.title} 바로가기</a>)}
                             />
                         }
                     </div>
@@ -67,33 +69,33 @@ const HistoryBlock = ({ data, mouseOverHandle }) => {
 }
 
 const HistoryBlockStyle = themeType => css`
-    // width: 600px;
-    cursor: pointer;
-    height: 200px;
+    position: relative;
+    width: 355px;
+    height: calc(100% - 10px);
+    float: left;
     margin-right: 15px;
+    cursor: pointer;
     padding: 15px;
     background: #fff;
     border-radius: 0 10px 10px 10px;
     border: 1px solid ${setColor(themeType).pointColor02};
-    display: flex; 
-    flex-wrap: wrap;
     overflow: hidden;
     .historySection {
         position: relative; 
-        width: 300px;
         border: 1px solid transparent; 
-        min-height: 140px;
+        height: 100%;
         display: flex; 
         flex-direction: column;
         justify-content: space-between;
         .datePrj {
-            font-size: 12px;
-            margin-bottom: 7px;
+            font-size: 13px;
+            margin-bottom: 10px;
             opacity: 0.4;
         }
         h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
+            font-size: 29px;
+            margin-bottom: 20px;
+            letter-spacing: -0.07em;
         }
         .explain {
             flex: 1;
@@ -105,72 +107,92 @@ const HistoryBlockStyle = themeType => css`
         .info {
             width: 100%; 
             overflow: hidden;
+            .infoDevice {
+                // width: 100%; 
+                // overflow: hidden;
+            }
             .figment {
                 float: left;
                 margin-right: 4px;
                 margin-bottom: 4px;
-            }
+                font-size: 16px;
+            } 
+            
+        }
+        .content {
+            font-size: 17px;
+            line-height: 1.3;
         }
         .btnMore {
-            position: absolute; 
-            top: 0; 
-            right: 0; 
-            font-size: 12px; 
-            font-family: 'GODO M';
-            text-decoration: underline; 
-            border: 0 none; 
-            outline: 0 none; 
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 14px;
+            font-family: inherit;
+            text-decoration: underline;
+            border: 0 none;
+            outline: 0 none;
             background: transparent;
+            opacity: 0.6;
         }
     }
     .historyMore {
-        position: relative; 
+        position: absolute; 
+        top: 0;
+        right: -100%; 
+        z-index: 3; 
+        width: 100%;
         height: 100%; 
-        white-space: normal;
-        line-height: 1.3;
-        font-size: 14px;
-        overflow: hidden; 
-        width: 0;
-        transition: .2s ease-in; 
+        display: flex; 
+        justify-content: flex-end;
+        transition: .2s ease-in;
+        // display: none;
         &.active {
-            width: 280px;
+            right: 0;
         }
-        .moreEtc {
-            font-size: 14px;
-            
+        .historyMoreLayer {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            z-index: 1; 
+            width: 100%;
+            height: 100%; 
         }
         .historyMoreInner {
-            width: 280px;
+            position: relative;
+            z-index: 3;
+            background: rgba(40, 40, 203, .95);
+            width: 80%;
             display: flex; 
             flex-direction: column;
             justify-content: space-between; 
-            position: absolute; 
-            top: 0; 
-            right: 0;
-            z-index: 1;  
-            width: 100%; 
             height: 100%; 
-            padding: 0 15px; 
+            padding: 30px 15px; 
+            color: #fff;
             .moreContent {
                 word-break: keep-all;
                 .workList {
                     border-bottom: 1px solid #eee;
                     padding-bottom: 10px; 
                     margin-bottom: 10px;
+                    li {
+                        margin-bottom: 5px;
+                    }
+                }
+                .content {
+                    line-height: 1.3;
+                    max-height: 100px;
+                    overflow: hidden;
+                    overflow-y: auto;
                 }
             }
             a {
                 text-decoration: underline; 
-                color: ${setColor(themeType).pointColor}; 
-                opacity: 0.7;
-                transition: .1s; 
-                &:hover {
-                    opacity: 1; 
-                }
+                color: #ffd400; 
+                opacity: 1; 
             }
         }
     }
-    
 `
 
 export default HistoryBlock

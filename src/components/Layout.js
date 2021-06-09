@@ -8,9 +8,7 @@ import { setColor } from '../styles/commonStyle'
 import Nav from './Nav'
 
 const Layout = ({ children }) => {
-
     const location = useLocation();
-
     return (
         <div className="wrap" css={LayoutStyle(location.pathname.replace('/', ''))}>
             <div className="header">
@@ -26,16 +24,15 @@ const Layout = ({ children }) => {
 const LayoutStyle = type => css`
     position: relative;
     width: 100%;
-    min-width: 1290px; 
     height: 100%; 
     padding-left: 240px;
     background: ${setColor(type).bgColor};
     border: 8px solid ${setColor(type).pointColor};
     border-left: 0;
     .containerWrap{
+        width: 100%;
         height: 100%; 
-        overflow:hidden;
-        overflow-y: auto; 
+        overflow:auto;
     }
 `
 

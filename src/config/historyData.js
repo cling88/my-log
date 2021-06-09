@@ -41,7 +41,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="개발, 운영" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         회사 자체 서비스로써 
                         다양한 기능 기반의 프로젝트로 퍼블리싱 기술을 익히는데에 많은 도움이 되었으며, 
                         함께 기획 하여 사용자단에서 생각하는 능력은 키우는데 많은 도움이 되었던 프로젝트 입니다.
@@ -72,7 +72,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="개발, 운영" /></li>
                     </ul>
-                    <p>처음 타 기관과 협업하는데에 많은 도움을 받은 프로젝트입니다.</p>
+                    <p className="content scrollLight">처음 타 기관과 협업하는데에 많은 도움을 받은 프로젝트입니다.</p>
                 </div>
             )
         },
@@ -101,7 +101,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="개발, 운영" /></li>
                     </ul>
-                    <p>
+                    <p className="content">
                         예약시스템을 중심으로한 프로젝트로 달력 활용을 많이 하였습니다.
                     </p>
                 </div>
@@ -129,7 +129,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="개발, 운영" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         메이퀸픽쳐스 드라마 제작사의 회사 및 드라마 소개 사이트 입니다.
                     </p>
                 </div>
@@ -160,7 +160,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="개발, 운영" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         예약시스템을 중심으로한 프로젝트로 달력 활용을 많이 하였습니다.
                     </p>
                 </div>
@@ -190,7 +190,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="개발" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         프로토타입이지만 인터렉션을 많이 활용하여 개인적으로 재밌게 작업하였습니다.
                     </p>
                 </div>
@@ -218,7 +218,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="개발" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         부재중이나 자동응답 메세지 설정을 하는 서비스 입니다.
                     </p>
                 </div>
@@ -245,7 +245,7 @@ export const historyData = {
                     <ul className="workList">
                         <li><Definition dt="개발: " dd="유지보수" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         ReactJS를 처음 접하여 일부 유지보수 작업을 하였습니다.
                     </p>
                 </div>
@@ -275,7 +275,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="퍼블리싱 70%" /></li>
                         <li><Definition dt="개발: " dd="리뉴얼" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight"> 
                         공통 컴포넌트 및 일부 페이지, 인터렉션을 개발하였습니다. 
                     </p>
                 </div>
@@ -295,8 +295,8 @@ export const historyData = {
             content: () => (
                 <div className="content">
                     <p>
-                        현대자동차의 ccsp(Car Connection Service Platform)의 일부 페이지 개발에 참여하였습니다. 
-                        현대자동차 사이트의 통합 로그인의 프로세스를 바꾸는 과정에서 퍼블리싱 리뉴얼 작업에 참여하였습니다. 
+                        현대자동차의 ccsp(Car Connection Service Platform) 서비스 및 통합 로그인
+                         
                     </p>
                 </div>
             ),
@@ -306,8 +306,9 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="개발 40%" /></li>
                         <li><Definition dt="개발: " dd="개발" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight"> 
                         React로 ccsp 사이트 개발 및 HTML, css로 통합 로그인 수정을 하였습니다. 
+                        현대자동차 사이트의 통합 로그인의 프로세스를 바꾸는 과정에서 퍼블리싱 리뉴얼 작업에 참여하였습니다.
                     </p>
                 </div>
             )
@@ -334,7 +335,7 @@ export const historyData = {
                         <li><Definition dt="관여: " dd="개발 80%" /></li>
                         <li><Definition dt="개발: " dd="버전 업데이트" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         React 기반, spatial Navigation 플러그인을 사용하여 개발하였습니다. 
                         리모컨 작동을 반영하기 위해 모든 움직임과 액션을 key값으로 컨트롤 하도록 개발하였습니다. 
                     </p>
@@ -362,7 +363,7 @@ export const historyData = {
                     <ul className="workList">
                         <li><Definition dt="개발: " dd="운영" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         매월 웹진 내용 업데이트 및 요청별 일부 수정을 하였습니다.
                     </p>
                 </div>
@@ -392,7 +393,7 @@ export const historyData = {
                     <li><Definition dt="관여: " dd="개발 100%" /></li>
                         <li><Definition dt="개발: " dd="개발" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         spatial Navigation 과 TweenMax 라이브러리를 사용하여 arrow 컨트롤과 애니메이션을 통한 인터렉션등을 구축하였습니다. 
                     </p>
                 </div>
@@ -420,7 +421,7 @@ export const historyData = {
                     <li><Definition dt="관여: " dd="개발 30%" /></li>
                         <li><Definition dt="개발: " dd="리뉴얼" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         리액트 기반으로 일부 페이지를 개발에 참여하였습니다. 
                     </p>
                 </div>
@@ -448,7 +449,7 @@ export const historyData = {
                     <li><Definition dt="관여: " dd="퍼블리싱 100%" /></li>
                         <li><Definition dt="개발: " dd="리뉴얼" /></li>
                     </ul>
-                    <p>
+                    <p className="content scrollLight">
                         swiperjs, javascript 를 기반으로 퍼블리싱 및 인터렉션을 하였습니다. 
                     </p>
                 </div>
