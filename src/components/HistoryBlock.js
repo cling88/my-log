@@ -12,15 +12,11 @@ import Figment from './Figment'
 
 const HistoryBlock = ({ data, mouseOverHandle }) => {
 
-    const [Active, setActive] = useState(true);
+    const [Active, setActive] = useState(false);
 
     const { themeType } = useSelector(({ theme }) => ({
         themeType: theme.themeType
     }));
-    
-    useEffect(() => {
-        console.log("data: ", data)
-    }, []);
 
     return (
         <div 
