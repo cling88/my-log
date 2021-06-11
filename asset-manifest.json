@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-log/static/css/main.84f0e62c.chunk.css",
+    "main.js": "/my-log/static/js/main.1ef5ac8a.chunk.js",
+    "main.js.map": "/my-log/static/js/main.1ef5ac8a.chunk.js.map",
+    "runtime-main.js": "/my-log/static/js/runtime-main.8e3ffe95.js",
+    "runtime-main.js.map": "/my-log/static/js/runtime-main.8e3ffe95.js.map",
+    "static/js/2.23f534dc.chunk.js": "/my-log/static/js/2.23f534dc.chunk.js",
+    "static/js/2.23f534dc.chunk.js.map": "/my-log/static/js/2.23f534dc.chunk.js.map",
+    "static/js/3.327eeabb.chunk.js": "/my-log/static/js/3.327eeabb.chunk.js",
+    "static/js/3.327eeabb.chunk.js.map": "/my-log/static/js/3.327eeabb.chunk.js.map",
+    "index.html": "/my-log/index.html",
+    "static/css/main.84f0e62c.chunk.css.map": "/my-log/static/css/main.84f0e62c.chunk.css.map",
+    "static/js/2.23f534dc.chunk.js.LICENSE.txt": "/my-log/static/js/2.23f534dc.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/my-log/static/media/JejuGothic.fc22b99e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e3ffe95.js",
+    "static/js/2.23f534dc.chunk.js",
+    "static/css/main.84f0e62c.chunk.css",
+    "static/js/main.1ef5ac8a.chunk.js"
+  ]
+}
