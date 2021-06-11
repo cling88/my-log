@@ -17,7 +17,7 @@ const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename = "/my-log">
       <App />
     </BrowserRouter>
   </Provider>,
